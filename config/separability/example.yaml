@@ -1,0 +1,23 @@
+# class separability analysis settings 
+
+# path to spectrum sets folder "./data/input/example" as example
+input: ./data/input/example/ 
+
+# path to result xlsx file
+output: ./data/result/example/separability-setA-setB.xlsx  
+
+parameters:
+
+  # default file name of spectrum set data
+  # should be xlsm format file
+  # should have "Sheet1" sheet with data
+  # 1 row - header "Model, File, 0, ..., 2000"
+  # each next row = spectrum data 
+  
+  defaultfilename: spectrum.xlsm  
+  
+  # frequency range settings [0, 2000] as default
+  frequency: 
+    range:
+      - 0 
+      - 2000

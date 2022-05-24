@@ -1,0 +1,30 @@
+# settings of spectrum class precision analysis 
+
+# array of path to spectrum set folder "./data/input/example" as example
+input: 
+  - ./data/input/example/set A/
+  - ./data/input/example/set B/
+
+# array of path to result xlsx file
+output: 
+  - ./data/result/example/precision-set-A.xlsx
+  - ./data/result/example/precision-set-B.xlsx  
+
+parameters:
+
+  # default file name of spectrum set data
+  # should be xlsm format file
+  #
+  # FILE FORMAT
+  #
+  # should have "Sheet1" sheet with data
+  # first row - header "Model, File, 0, ..., 2000"
+  # each next row = spectrum data 
+  
+  defaultfilename: spectrum.xlsm  
+  
+  # frequency range settings [0, 2000] as default
+  frequency: 
+    range:
+      - 0
+      - 2000
